@@ -38,35 +38,35 @@ const newReleases = [
 
 const topMovies = [
        {	
-	"id":"1",
+	"id":"6",
         "title": "Movie Title 1",
         "image": "https://picsum.photos/200/200?random=1",
         "description": "Description of Movie Title 1.",
         "trailerLink": "https://youtu.be/xFU8U4UVUBs?si=nWmyMqMSU5m7NqIH"
     },
     {
-	"id":"2",
+	"id":"7",
         "title": "Movie Title 2",
         "image": "https://picsum.photos/200/200?random=1",
         "description": "Description of Movie Title 2.",
 	"trailerLink": "https://youtu.be/xFU8U4UVUBs?si=nWmyMqMSU5m7NqIH"
     },
     {
-	"id":"3",
+	"id":"8",
         "title": "Movie Title 3",
         "image": "https://picsum.photos/200/200?random=1",
         "description": "Description of Movie Title 3.",
 	"trailerLink": "https://youtu.be/xFU8U4UVUBs?si=nWmyMqMSU5m7NqIH"
     },
     {
-	"id":"4",
+	"id":"9",
         "title": "Movie Title 4",
         "image": "https://picsum.photos/200/200?random=1",
         "description": "Description of Movie Title 4.",
 	"trailerLink": "https://youtu.be/xFU8U4UVUBs?si=nWmyMqMSU5m7NqIH"
     },
     {
-	"id":"5",
+	"id":"10",
         "title": "Movie Title 5",
         "image": "https://picsum.photos/200/200?random=1",
         "description": "Description of Movie Title 4.",
@@ -81,9 +81,11 @@ function renderMovies() {
       const card = document.createElement('div');
       card.classList.add('new_release_card');
       card.innerHTML = `
+	<a href="movie-detail.html?id=${movie.id}" onclick="setMovieData('${movie.id}')">
           <img src="${movie.image}" alt="${movie.title}">
           <h5>${movie.title}</h5>
           <p>${movie.description}</p>
+	</a>
       `;
       newReleasesArea.appendChild(card);
   });
@@ -115,9 +117,11 @@ function renderTopMovies() {
         const card = document.createElement('div');
         card.classList.add('top_movie_card');
         card.innerHTML = `
+	<a href="movie-detail.html?id=${movie.id}" onclick="setMovieData('${movie.id}')">
             <img src="${movie.image}" alt="${movie.title}">
             <h5>${movie.title}</h5>
             <p>${movie.description}</p>
+</a>
         `;
         topMoviesArea.appendChild(card);
     });
