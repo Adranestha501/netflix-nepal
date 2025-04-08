@@ -34,6 +34,23 @@
         </div>
     </header>
     <main>
+	<section id="newReleases">
+	    <h1>New Releases</h1>
+	    <div class="slider">
+        	<div class="new_releases_area"></div>
+	        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        	<button class="next" onclick="moveSlide(1)">&#10095;</button>
+	    </div>
+	</section>
+	<section id="topMovies">
+	    <h1>Top Movies</h1>
+	    <div class="slider">
+        	<div class="top_movies_area"></div>
+	        <button class="prev" onclick="moveTopSlide(-1)">&#10094;</button>
+        	<button class="next" onclick="moveTopSlide(1)">&#10095;</button>
+	    </div>
+	</section>
+
         <section id="watchTv">
             <div class="content_area">
                 <h1>Enjoy on your TV</h1>
@@ -161,5 +178,5 @@
         <p>Netflix Pakistan</p>
     </footer>
 </body>
-
+<script src="./index.js"></script>
 </html>
