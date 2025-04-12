@@ -83,8 +83,7 @@ function renderMovies() {
       card.innerHTML = `
 	<a href="movie-detail.html?id=${movie.id}" onclick="setMovieData('${movie.id}')" style="text-decoration:none">
           <img src="${movie.image}" alt="${movie.title}">
-          <h5>${movie.title}</h5>
-          <p>${movie.description}</p>
+          <h2>${movie.title}</h2>
 	</a>
       `;
       newReleasesArea.appendChild(card);
@@ -119,8 +118,7 @@ function renderTopMovies() {
         card.innerHTML = `
 	<a href="movie-detail.html?id=${movie.id}" onclick="setMovieData('${movie.id}')" style="text-decoration:none">
             <img src="${movie.image}" alt="${movie.title}">
-            <h5>${movie.title}</h5>
-            <p>${movie.description}</p>
+            <h2>${movie.title}</h2>
 </a>
         `;
         topMoviesArea.appendChild(card);
