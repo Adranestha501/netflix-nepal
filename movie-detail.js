@@ -16,7 +16,7 @@ const newReleases = [
     {
 	"id":"3",
         "title": "Harry Ki Pyari",
-        "image": "https://netflix-nepal-bucket.s3.us-east-1.amazonaws.com/img/3.png"",
+        "image": "https://netflix-nepal-bucket.s3.us-east-1.amazonaws.com/img/3.png",
         "description": "Harry and his 'Pyaari' Jenny, are chasing similar goals in life, but the extent to which they both go about to achieve this is unimaginable.",
 	"trailerLink": "https://youtu.be/LUEjJuMKATM?si=nWmyMqMSU5m7NqIH"
     },
