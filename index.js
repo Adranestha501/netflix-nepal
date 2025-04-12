@@ -117,7 +117,7 @@ function renderTopMovies() {
         const card = document.createElement('div');
         card.classList.add('top_movie_card');
         card.innerHTML = `
-	<a href="movie-detail.html?id=${movie.id}" onclick="setMovieData('${movie.id}')">
+	<a href="movie-detail.html?id=${movie.id}" onclick="setMovieData('${movie.id}')" style="text-decoration:none">
             <img src="${movie.image}" alt="${movie.title}">
             <h5>${movie.title}</h5>
             <p>${movie.description}</p>
